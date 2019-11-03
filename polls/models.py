@@ -6,7 +6,7 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
-        return self.question_text+" Marcin"
+        return self.question_text+" Marcin Sieciechowicz"
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
